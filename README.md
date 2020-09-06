@@ -1,8 +1,12 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/j6i1349nw4s81pno/branch/master?svg=true)](https://ci.appveyor.com/project/homutovan/ajs-1-10-3-generators/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/ukyy858tmuh12381/branch/master?svg=true)](https://ci.appveyor.com/project/homutovan/ajs-1-11-typescript/branch/master)
 
-# Домашнее задание к лекции «Символы, итераторы, генераторы»
+# Домашнее задание к лекции «TypeScript»
 
-## Генераторы (задача со звёздочкой)
+## Новые типы
+
+## Сумма покупки
+
+## Список покупок (задача со звёздочкой)
 
 ### Installation
 

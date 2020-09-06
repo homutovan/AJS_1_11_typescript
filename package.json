@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "build": "webpack --mode production",
+    "build": "tsc",
+    "watch": "tsc -w",
     "lint": "eslint .",
     "test": "jest",
     "coverage": "jest --coverage",
