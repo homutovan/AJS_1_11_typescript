@@ -229,3 +229,112 @@ test('new card should not be empty', () => {
   cart.add(smartphone);
   expect(cart.items[3].quantity).toBe(3);
 });
+
+test('new card should not be empty', () => {
+  const cart = new Cart();
+  const book =  new Book(1001, 'War and Piece', 'Leo Tolstoy', 2000, 1225)
+  const musicAlbum = new MusicAlbum(1008, 'Meteora', 'Linkin Park', 900);
+  const smartphone = new Smartphone(1015, 'Samsung', 'Galaxy S8', 15000);
+  const movie = new Movie(
+    1009, 
+    'The Avengers', 
+    2012, 
+    'USA', 
+    'Avengers Assemble!', 
+    ['science fiction', 'action', 'fantasy', 'adventure'],
+    '137 мин',
+    250);
+  cart.add(book);
+  cart.add(musicAlbum);
+  cart.add(movie);
+  cart.add(movie);
+  cart.add(movie);
+  cart.add(movie);
+  cart.add(smartphone);
+  cart.add(smartphone);
+  cart.add(smartphone);
+  expect(cart.items.length).toBe(4);
+});
+
+test('new card should not be empty', () => {
+  const cart = new Cart();
+  const book =  new Book(1001, 'War and Piece', 'Leo Tolstoy', 2000, 1225)
+  const musicAlbum = new MusicAlbum(1008, 'Meteora', 'Linkin Park', 900);
+  const smartphone = new Smartphone(1015, 'Samsung', 'Galaxy S8', 15000);
+  const movie = new Movie(
+    1009, 
+    'The Avengers', 
+    2012, 
+    'USA', 
+    'Avengers Assemble!', 
+    ['science fiction', 'action', 'fantasy', 'adventure'],
+    '137 мин',
+    250);
+  cart.add(book);
+  cart.add(musicAlbum);
+  cart.add(movie);
+  cart.add(movie);
+  cart.add(movie);
+  cart.add(movie);
+  cart.add(smartphone);
+  cart.add(smartphone);
+  cart.add(smartphone);
+  cart.delItem(1009);
+  expect(cart.items.length).toBe(3);
+});
+
+test('new card should not be empty', () => {
+  const cart = new Cart();
+  const book =  new Book(1001, 'War and Piece', 'Leo Tolstoy', 2000, 1225)
+  const musicAlbum = new MusicAlbum(1008, 'Meteora', 'Linkin Park', 900);
+  const smartphone = new Smartphone(1015, 'Samsung', 'Galaxy S8', 15000);
+  const movie = new Movie(
+    1009, 
+    'The Avengers', 
+    2012, 
+    'USA', 
+    'Avengers Assemble!', 
+    ['science fiction', 'action', 'fantasy', 'adventure'],
+    '137 мин',
+    250);
+  cart.add(book);
+  cart.add(musicAlbum);
+  cart.add(movie);
+  cart.add(movie);
+  cart.add(movie);
+  cart.add(movie);
+  cart.add(smartphone);
+  cart.add(smartphone);
+  cart.add(smartphone);
+  cart.delItem(1009);
+  cart.delItem(1015);
+  expect(cart.items.length).toBe(3);
+});
+
+test('new card should not be empty', () => {
+  const cart = new Cart();
+  const book =  new Book(1001, 'War and Piece', 'Leo Tolstoy', 2000, 1225)
+  const musicAlbum = new MusicAlbum(1008, 'Meteora', 'Linkin Park', 900);
+  const smartphone = new Smartphone(1015, 'Samsung', 'Galaxy S8', 15000);
+  const movie = new Movie(
+    1009, 
+    'The Avengers', 
+    2012, 
+    'USA', 
+    'Avengers Assemble!', 
+    ['science fiction', 'action', 'fantasy', 'adventure'],
+    '137 мин',
+    250);
+  cart.add(book);
+  cart.add(musicAlbum);
+  cart.add(movie);
+  cart.add(movie);
+  cart.add(movie);
+  cart.add(movie);
+  cart.add(smartphone);
+  cart.add(smartphone);
+  cart.add(smartphone);
+  cart.delItem(1009);
+  cart.delItem(1015);
+  expect(cart.items[2].quantity).toBe(2);
+});
